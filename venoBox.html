@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/venobox/dist/venobox.min.css">
+
+    <style>
+        .small-img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+<div class="m-5 p-5">
+    <a class="hh" data-maxwidth="700px" data-gall="bb" href="./image-test/FB_IMG_1980459635229668626.jpg">
+        <img src="./image-test/FB_IMG_1980459635229668626.jpg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="hh" data-maxwidth="700px" data-gall="bb" href="./image-test/25f75778912a88d6330902b6d07cf9a4.jpg">
+        <img src="./image-test/25f75778912a88d6330902b6d07cf9a4.jpg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="hh" data-maxwidth="700px" data-gall="bb" href="./image-test/FB_IMG_156593138434570278.jpg">
+        <img src="./image-test/FB_IMG_156593138434570278.jpg" class="small-img" alt="image alt"/>
+    </a>
+    <a class="hh" data-maxwidth="700px" data-gall="bb" href="./image-test/orca-image--641545992.jpeg">
+        <img src="./image-test/orca-image--641545992.jpeg" class="small-img" alt="image alt"/>
+    </a>
+</div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/venobox/dist/venobox.min.js"></script>
+
+<script>
+
+new VenoBox({
+    
+    infinigall : true,
+    overlayColor :'rgba(0,0,0,4.5)',
+    share : true,
+    selector: '.hh'
+});
+
+</script>
+
+
+</body>
+</html> 

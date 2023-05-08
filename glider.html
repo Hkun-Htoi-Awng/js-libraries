@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/glider-js/glider.min.css">
+</head>
+<body>
+
+
+
+
+<div class="m-5 p-5">
+    <div class="glider-contain">
+        <div class="glider">
+            <h1 class="bg-primary p-5 text-center"> 1 </h1>
+            <h1 class="bg-secondary p-5 text-center"> 2 </h1>
+            <h1 class="bg-success p-5 text-center"> 3 </h1>
+            <h1 class="bg-danger p-5 text-center"> 4 </h1>
+            <h1 class="bg-light p-5 text-center"> 5 </h1>
+            <h1 class="bg-warning p-5 text-center"> 6 </h1>
+        </div>
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+    </div>
+</div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/glider-js/glider.min.js"></script>
+
+
+<script>
+
+    new Glider(document.querySelector('.glider'),{
+        dots: '.dots',
+        slidesToShow: 3,
+        arrows: {
+        prev: '.glider-prev',
+        next: ".glider-next"
+            },
+    });
+</script>
+
+
+</body>
+</html> 

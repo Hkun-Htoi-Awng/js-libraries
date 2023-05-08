@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+</head>
+<body>
+
+
+    <div class="vh-100 p-5  border border-primary">
+        <h1 class="animate__animated">Hkun Htoi Awng</h1>
+    </div>
+    <div class="vh-100 p-5  border border-success" id="dvv">
+        <h1 class="animate__animated">Hkun Htoi Awng</h1>
+    </div>
+    <div class="vh-100 p-5  border border-danger">
+        <h1 class="animate__animated">Hkun Htoi Awng</h1>
+    </div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+
+<script>
+
+    let navBar = document.querySelector('.navbar')
+    let h1 = document.querySelectorAll("h1")
+
+    h1.forEach(function (currentH1){
+        new Waypoint ({
+            element : currentH1,
+            handler : function(direction){
+                if(direction === "down"){
+                currentH1.classList.add('animate__fadeInDown')
+                }
+            },offset : "100%"
+        })
+    })
+
+
+</script>
+
+</body>
+</html> 
